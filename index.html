@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
   <head>
@@ -136,3 +137,143 @@
     <script src="index.js"></script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>App de Criptomonedas</title>
+
+    <title>App de Criptomonedas</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #121212; /* Fondo oscuro */
+        color: #e0e0e0; /* Texto claro */
+      }
+
+      input,
+      select,
+      button {
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+        border: 1px solid #333; /* Borde más oscuro */
+        background: #333; /* Fondo más oscuro para input y select */
+        color: #fff; /* Texto claro */
+        box-shadow: 0 0 5px #000; /* Sombra más oscura */
+        outline: none;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      #vender {
+        background-color: #a83232;
+      }
+
+      #comprar {
+        background-color: #388e3c;
+      }
+
+      #agregar {
+        background-color: #303f9f;
+      }
+
+      button:hover {
+        opacity: 0.8;
+      }
+
+      .modal {
+        background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+      }
+
+      .modal-content {
+        background-color: #222; /* Fondo oscuro para el contenido del modal */
+        color: #ddd; /* Texto claro */
+      }
+
+      .close {
+        color: #aaa;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #fff;
+      }
+
+      #historial div,
+      #totalUSDT {
+        background-color: #333; /* Fondo de elementos de historial */
+        color: #fff; /* Texto claro */
+      }
+
+      /* Adapta el resto de tus estilos aquí */
+
+      /* Estilos para el modal */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+        padding-top: 60px;
+      }
+
+      .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+      }
+
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <input
+      type="text"
+      id="cryptoName"
+      placeholder="Nombre de la criptomoneda"
+    />
+    <button id="agregar" onclick="agregarCripto()">Agregar</button>
+
+    <select id="criptoSeleccionada"></select>
+
+    <input type="number" id="cantidadUSDT" placeholder="Cantidad de USDT" />
+    <button id="comprar" onclick="comprar()">Comprar</button>
+    <button id="vender" onclick="vender()">Vender</button>
+
+    <div id="historial"></div>
+    <div>Total en USDT: <span id="totalUSDT">0</span></div>
+
+    <div id="myModal" class="modal">
+      <!-- Contenido del modal -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="historialCompleto"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
+>>>>>>> 25baa302bd18528edbe54baef9467e48b6e7abe6
